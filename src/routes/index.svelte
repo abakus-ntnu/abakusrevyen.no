@@ -51,35 +51,9 @@
 		transition: 0.2s cubic-bezier(0.66, 0.05, 0.5, 1.57);
 	}
 
-	.blue {
-		border-color: #72a0ae;
-		background-color: #6b97ab;
-	}
-
-	.green {
-		border-color: #6e9576;
-		background-color: #5d8c67;
-	}
-
-	.orange {
-		border-color: #e76e4a;
-		background-color: #ea7b53;
-	}
-
-	.pink {
-		border-color: #e75770;
-		background-color: #de4c61;
-	}
-
 	.youtube-red {
 		border-color: #e74a4a;
 		background-color: #ea5353;
-	}
-
-	.fixed-margin {
-		height: 6em;
-		position: relative;
-		z-index: 1;
 	}
 
 	:global(main) {
@@ -122,6 +96,15 @@
 	.block {
 		margin: 0.7em;
 	}
+
+	p {
+		font-size: 1.5em;
+		margin: 0.4em;
+	}
+
+	.content {
+		margin-top: -3em;
+	}
 </style>
 
 <svelte:head>
@@ -129,6 +112,19 @@
 </svelte:head>
 
 <div class="content">
+
+	<!-- Description -->
+	<p>
+		Abakusrevyen 2020 var en braksukse!
+		<br />
+		Både vi på, rundt og bak scenen storkoste oss gjennom hele prosessen!
+	</p>
+	<p>
+		Takk for alle som kom å så på.
+		<br />
+		Gleder oss til å se dere igjen neste år!
+	</p>
+
 	<div id="iframe-holder" class="no-error">
 
 		<!-- Error to display if the iframe fail to load -->
@@ -154,32 +150,10 @@
 			height="315"
 			src="https://www.youtube.com/embed/EvRhDjTkBCA"
 			frameborder="0"
-			allow="accelerometer; autoplay; encrypted-media; gyroscope;
-			picture-in-picture"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
 			on:load={() => show_iframe_error(false)}>
 			/>
 		</iframe>
 	</div>
-
-	<!-- Ticket button -->
-	<div class="fixed-margin">
-		<a
-			class="button {rand_choise(colors)}"
-			href="https://abakusrevy.hoopla.no/sales">
-			Kjøp Billetter her!
-		</a>
-	</div>
-
-	<!-- Description -->
-	<p>
-		Årene har gått. Studenttida er for lengst glemt i en eske oppe på
-		loftet, og du spør deg selv – hvordan havnet jeg her? Hvem var jeg?
-		Hvilke valg tok jeg? Og hva var det egentlig som satte spor?
-	</p>
-	<p>
-		Gira på å se hva noen av Abakus' mest kreative sjeler har jobbet med det
-		siste halvåret? Kom deg på Abakusrevyen 2020 – Satte Spor, billetter er
-		ute nå!
-	</p>
 </div>

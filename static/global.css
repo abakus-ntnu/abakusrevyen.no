@@ -46,6 +46,11 @@ code {
 	border-radius: 2px;
 }
 
+.stamper {
+	font-family: "Stamper";
+	color: #c92f1a;
+}
+
 @media (min-width: 400px) {
 	body {
 		font-size: 14px;
@@ -61,4 +66,9 @@ code {
 @font-face {
 	font-family: "AEH";
 	src: url("AEH.ttf");
+}
+
+@font-face {
+	font-family: "Stamper";
+	src: url("old_stamper.ttf");
 }
