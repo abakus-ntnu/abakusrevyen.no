@@ -2,7 +2,8 @@
 	export const rand_choise = list => {
 		return list[Math.floor(Math.random() * list.length)];
 	};
-	export const colors = ["blue", "green", "orange", "pink"];
+	export let colors = ["blue", "green", "orange", "pink"];
+	export let text = "[Ferdig]";
 </script>
 
 <style>
@@ -28,8 +29,10 @@
 	}
 </style>
 
-<img id="banner" src="images/banner-{rand_choise(colors)}.png" alt="Banner image" />
+<img id="banner" src="images/banner-{rand_choise(colors)}.png" alt="Banner" />
 
-<div class="stamper">
-	<h1 class="stamper">[Ferdig]</h1>
-</div>
+{#if text}
+	<div class="stamper">
+		<h1 class="stamper">{text}</h1>
+	</div>
+{/if}

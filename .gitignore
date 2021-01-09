@@ -1,6 +1,8 @@
 .DS_Store
+push.sh
 /node_modules/
 /src/node_modules/@sapper/
 yarn-error.log
-/cypress/screenshots/
+/cypress/
+/cypress.json
 /__sapper__/

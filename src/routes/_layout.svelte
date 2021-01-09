@@ -1,18 +1,23 @@
 <script>
 	import Banner from "../components/banner.svelte";
+	export let segment;
 </script>
 
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
+		max-width: 60em;
 		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
 </style>
 
-<Banner />
+{#if segment === '2020'}
+	<Banner />
+{:else}
+	<Banner colors={['søk-revy']} text="" />
+{/if}
 
 <main>
 	<slot />

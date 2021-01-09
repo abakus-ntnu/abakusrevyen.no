@@ -1,6 +1,11 @@
 <script>
 	import { onMount } from "svelte";
 
+	export const rand_choise = list => {
+		return list[Math.floor(Math.random() * list.length)];
+	};
+	export const colors = ["blue", "green", "orange", "pink"];
+
 	let timeout_error_task = 0;
 
 	const show_iframe_error = show_error => {
@@ -66,64 +71,47 @@
 		font-size: 0.9em;
 	}
 
-	.big {
-		font-size: 2em;
-	}
-
 	.block {
 		margin: 0.7em;
 	}
 
 	p {
 		font-size: 1.5em;
-		margin: 0.5em;
+		margin: 0.4em;
 	}
 
-	.wide {
-		letter-spacing: 0.1em;
+	.content {
+		margin-top: -3em;
 	}
 </style>
 
 <svelte:head>
-	<title>Opptak til Abakusrevyen 20201!</title>
+	<title>Abakusrevyen 2020</title>
 </svelte:head>
 
 <div class="content">
 
 	<!-- Description -->
-	<h1>Abakusrevyen 2021 har opptak!</h1>
 	<p>
-		Abakusrevyen 2020 var en braksuksess, men 2021 skal bli enda bedre!
+		Abakusrevyen 2020 var en braksuksess!
 		<br />
-		Både vi på og bak scenen storkoste oss under fjorårets revy, og du kan være med neste år!
+		Både vi på, rundt og bak scenen storkoste oss gjennom hele prosessen!
 	</p>
-	<div>
-		<br />
-	</div>
-	<div class="block">
-		<a class="button blue big wide" href="https://tinyurl.com/Abakusrevy21">Søk Her!</a>
-	</div>
-	<div>
-		<br />
-	</div>
 	<p>
-		For informasjon om grupper og stillinger, se
-		<a href="https://abakus.no/articles/290/">denne</a>
-		artikkelen på abakus.no.
+		Takk for alle som kom å så på.
+		<br />
+		Gleder oss til å se dere igjen neste år!
+		<br />
 	</p>
 
-	<p>
-		Spørsmål om alt og ingenting kan rettes til
-		<a href="mailto:revy@abakus.no">revy@abakus.no</a>
+	<p class="small">
+		<i>
+			PS!
+			<br />
+			Vi har nå opptak for Abakusrevyen 2021, søk da vell!
+		</i>
 		<br />
-		<b>
-			<u>Søknadsfrist 9. september!</u>
-		</b>
-	</p>
-
-	<p>
-		For mer info om fjorårets revy, se
-		<a href="/2020">Abakusrevyen 2020</a>
+		<a href="/">Søk Abakusrevyen 2021</a>
 	</p>
 
 	<div id="iframe-holder" class="no-error">
@@ -131,13 +119,11 @@
 		<!-- Error to display if the iframe fail to load -->
 		<div id="iframe-error">
 			<i>
-				Det ser ut som om promovideoen for opptak ikke ville laste inn. Kanskje du har en innholdsblokker som
-				forstyrrer?
-				<br />
+				Det ser ut som om promovideoen ikke ville laste inn. Kanskje du har en innholdsblokker som forstyrrer?
 				Eventuelt se promovideoen her på youtube.
 			</i>
 			<div class="block">
-				<a class="button youtube-red small" href="https://www.youtube.com/watch?v=yAu0zSS8YDY">Promo Video</a>
+				<a class="button youtube-red small" href="https://www.youtube.com/watch?v=EvRhDjTkBCA">Promo Video</a>
 			</div>
 		</div>
 
@@ -146,7 +132,7 @@
 			title="Abakusrevyen 2020 promo video"
 			width="560"
 			height="315"
-			src="https://www.youtube.com/embed/yAu0zSS8YDY"
+			src="https://www.youtube.com/embed/EvRhDjTkBCA"
 			frameborder="0"
 			allowfullscreen
 			on:load={() => show_iframe_error(false)}>

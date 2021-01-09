@@ -51,6 +51,38 @@ code {
 	color: #c92f1a;
 }
 
+.button {
+	border-radius: 5px;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-size: 1.5em;
+	color: white;
+	border-width: 0.2em;
+	border-style: solid;
+	transition: 0.2s cubic-bezier(0.66, 0.05, 0.5, 1.57);
+}
+
+.button:hover {
+	border-width: 0;
+	padding: 0.8em;
+	transition: 0.2s cubic-bezier(0.66, 0.05, 0.5, 1.57);
+}
+
+.youtube-red {
+	border-color: #e74a4a;
+	background-color: #ea5353;
+}
+
+.blue {
+	border-color: #72a0ae;
+	background-color: #6b97ab;
+}
+
+a,
+a[href^="mailto"] {
+	color: #FF5964;
+}
+
 @media (min-width: 400px) {
 	body {
 		font-size: 14px;
