@@ -1,9 +1,10 @@
 <script>
-	export const rand_choise = list => {
+	export const rand_choise = (list) => {
 		return list[Math.floor(Math.random() * list.length)];
 	};
-	export let colors = ["blue", "green", "orange", "pink"];
-	export let text = "[Ferdig]";
+	export let image_format = "images/2021/banner-søk-revy.png";
+	export let images = ["blue", "green", "orange", "pink"];
+	export let overlay = "";
 </script>
 
 <style>
@@ -29,10 +30,12 @@
 	}
 </style>
 
-<img id="banner" src="images/banner-{rand_choise(colors)}.png" alt="Banner" />
+<a href="/">
+	<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" />
 
-{#if text}
-	<div class="stamper">
-		<h1 class="stamper">{text}</h1>
-	</div>
-{/if}
+	{#if overlay}
+		<div class="stamper">
+			<h1 class="stamper">[{overlay}]</h1>
+		</div>
+	{/if}
+</a>

@@ -1,32 +1,28 @@
 <script>
-	import Banner from "../components/banner.svelte";
 	export let segment;
+	import { onMount } from "svelte";
+	onMount(() => {
+		const handleResize = () => {
+			document.documentElement.style.setProperty(
+				"--scrollbar",
+				window.innerWidth - document.body.clientWidth + "px"
+			);
+		};
+		window.addEventListener("resize", handleResize);
+		handleResize();
+	});
 </script>
 
 <style>
-	main {
-		position: relative;
-		max-width: 60em;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
+	footer {
+		color: #999;
+		font-size: 0.6em;
+		text-align: center;
 	}
 </style>
 
-{#if segment === '2020'}
-	<Banner />
-{:else}
-	<Banner colors={['søk-revy']} text="" />
-{/if}
-
-<main>
-	<slot />
-</main>
+<slot />
 
 <footer>
-	<p>
-		Laget med
-		<span style="color: #e25555;">&#9829;</span>
-		av Teknikk
-	</p>
+	<p>Laget med <span style="color: #e25555;">&#9829;</span> av Teknikk</p>
 </footer>

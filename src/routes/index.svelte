@@ -1,156 +1,22 @@
 <script>
-	import { onMount } from "svelte";
+	import Revy from '../components/revy.svelte';
 
-	let timeout_error_task = 0;
-
-	const show_iframe_error = show_error => {
-		clearTimeout(timeout_error_task);
-
-		const list = document.getElementById("iframe-holder").classList;
-		if (show_error) {
-			list.remove("no-error");
-		} else {
-			list.add("no-error");
-		}
-	};
-
-	onMount(() => {
-		timeout_error_task = setTimeout(() => show_iframe_error(true), 5000);
-	});
+	let videos = [{ title: 'Opptak Promo Video', title_long: 'Opptak 2021 Promo Video', id: 'yAu0zSS8YDY' }];
 </script>
 
-<style>
-	.content {
-		width: 100%;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		align-items: center;
-	}
-
-	:global(main) {
-		width: 100%;
-	}
-
-	#iframe-holder {
-		width: calc(100vw - 2.356267672vw);
-		height: calc(50vw - 1.178133836vw);
-	}
-
-	#iframe-holder iframe {
-		width: 100%;
-		height: 100%;
-		display: none;
-	}
-
-	#iframe-holder #iframe-error {
-		width: 100%;
-		height: 100%;
-		margin-bottom: calc(-50vw + 1 * 1.178133836vw);
-		display: grid;
-		align-content: center;
-		align-items: center;
-		background-color: rgba(255, 255, 255, 0.3);
-	}
-
-	#iframe-holder.no-error #iframe-error {
-		display: none;
-	}
-
-	#iframe-holder.no-error iframe {
-		display: initial;
-	}
-
-	.small {
-		font-size: 0.9em;
-	}
-
-	.big {
-		font-size: 2em;
-	}
-
-	.block {
-		margin: 0.7em;
-	}
-
-	p {
-		font-size: 1.5em;
-		margin: 0.5em;
-	}
-
-	.wide {
-		letter-spacing: 0.1em;
-	}
-</style>
-
 <svelte:head>
-	<title>Opptak til Abakusrevyen 20201!</title>
+	<title>Opptak til Abakusrevyen 2021!</title>
 </svelte:head>
 
-<div class="content">
+<Revy image_format="images/2021/banner-søk-revy.png" {videos}>
+	<h1>Abakusrevyen 2021!</h1>
 
-	<!-- Description -->
-	<h1>Abakusrevyen 2021 har opptak!</h1>
-	<p>
-		Abakusrevyen 2020 var en braksuksess, men 2021 skal bli enda bedre!
-		<br />
-		Både vi på og bak scenen storkoste oss under fjorårets revy, og du kan være med neste år!
-	</p>
-	<div>
-		<br />
-	</div>
-	<div class="block">
-		<a class="button blue big wide" href="https://tinyurl.com/Abakusrevy21">Søk Her!</a>
-	</div>
-	<div>
-		<br />
-	</div>
-	<p>
-		For informasjon om grupper og stillinger, se
-		<a href="https://abakus.no/articles/290/">denne</a>
-		artikkelen på abakus.no.
-	</p>
+	<i>Sulten på mer revy fra Abakus?</i>
 
 	<p>
-		Spørsmål om alt og ingenting kan rettes til
-		<a href="mailto:revy@abakus.no">revy@abakus.no</a>
-		<br />
-		<b>
-			<u>Søknadsfrist 9. september!</u>
-		</b>
+		<b>Fortvil ikke!</b><br />
+		Vi jobber på spreng for å lange en enda bedre, fetere og kulere revy en vi noen sinne har hatt!
 	</p>
 
-	<p>
-		For mer info om fjorårets revy, se
-		<a href="/2020">Abakusrevyen 2020</a>
-	</p>
-
-	<div id="iframe-holder" class="no-error">
-
-		<!-- Error to display if the iframe fail to load -->
-		<div id="iframe-error">
-			<i>
-				Det ser ut som om promovideoen for opptak ikke ville laste inn. Kanskje du har en innholdsblokker som
-				forstyrrer?
-				<br />
-				Eventuelt se promovideoen her på youtube.
-			</i>
-			<div class="block">
-				<a class="button youtube-red small" href="https://www.youtube.com/watch?v=yAu0zSS8YDY">Promo Video</a>
-			</div>
-		</div>
-
-		<!-- Promo video -->
-		<iframe
-			title="Abakusrevyen 2020 promo video"
-			width="560"
-			height="315"
-			src="https://www.youtube.com/embed/yAu0zSS8YDY"
-			frameborder="0"
-			allowfullscreen
-			on:load={() => show_iframe_error(false)}>
-			/>
-		</iframe>
-	</div>
-</div>
+	<p>For mer info og opptak av tideligere revyer, se vårt <a href="/arkiv">arkiv</a>.</p>
+</Revy>

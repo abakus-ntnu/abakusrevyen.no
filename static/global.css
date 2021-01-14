@@ -1,9 +1,16 @@
+:root {
+	--scrollbar: 0px;
+}
+
 body {
-	font-size: 12px;
+	font-size: 20px;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 	background-color: #ffe3be;
+	font-family: "AEH";
+	font-weight: 600;
+	font-family: 'f', Cantarell, 'Apple', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-family: "AEH";
 }
 
@@ -14,12 +21,17 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5em 0;
-	font-weight: 400;
+	font-weight: 900;
 	line-height: 1.2;
 }
 
 h1 {
+	margin-top: 1.5em;
 	font-size: 2em;
+}
+
+p {
+	margin: 0.4em;
 }
 
 a {
@@ -27,14 +39,30 @@ a {
 	text-decoration: none;
 }
 
+a,
+a[href^="mailto"] {
+	color: #FF5964;
+}
+
+.small {
+	font-size: 0.9em;
+}
+
+.block {
+	margin: 1.5em;
+}
+
 a:hover {
 	text-decoration: underline;
 }
 
-footer {
-	color: #999;
-	font-size: 0.6em;
-	text-align: center;
+main {
+	position: relative;
+	max-width: 60em;
+	padding: 1em;
+	margin: 0 auto;
+	box-sizing: border-box;
+	min-height: 60vh;
 }
 
 code {
@@ -54,8 +82,7 @@ code {
 .button {
 	border-radius: 5px;
 	padding: 0.5em;
-	margin: 0.5em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: white;
 	border-width: 0.2em;
 	border-style: solid;
@@ -78,26 +105,34 @@ code {
 	background-color: #6b97ab;
 }
 
-a,
-a[href^="mailto"] {
-	color: #FF5964;
-}
-
-@media (min-width: 400px) {
+@media (max-width: 1600px) {
 	body {
-		font-size: 14px;
+		font-size: 18px;
 	}
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1200px) {
 	body {
 		font-size: 16px;
 	}
 }
 
+@media (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+}
+
 @font-face {
 	font-family: "AEH";
-	src: url("AEH.ttf");
+	src: url("/font/AEH.ttf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "AEH";
+	src: url("/font/AER.ttf");
+	font-weight: 600;
 }
 
 @font-face {
