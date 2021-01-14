@@ -1,11 +1,11 @@
 <script>
-	import Revy from "../components/revy.svelte";
-	import Background from "../components/background.svelte";
+	import Revy from '../components/revy.svelte';
+	import Background from '../components/background.svelte';
 
-	let image_format = "images/2019/banner.png";
+	let image_format = 'images/2019/banner.png';
 	let videos = [
-		{ title: "Opptak", title_long: "Abakusrevyen Opptak 2019", id: "3XtropmKsrg" },
-		{ title: "Promo Video", title_long: "Abakusrevyen Promo Video 2019", id: "PdIhOjqtCDY" },
+		{ title: 'Opptak', title_long: 'Abakusrevyen Opptak 2019', id: '3XtropmKsrg' },
+		{ title: 'Promo Video', title_long: 'Abakusrevyen Promo Video 2019', id: '8W5PUSJ3slU' }
 	];
 </script>
 
