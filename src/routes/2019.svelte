@@ -13,7 +13,7 @@
 	<title>Abakusrevyen 2019</title>
 </svelte:head>
 
-<Revy {image_format} {videos}>
+<Revy {image_format} {videos} color="black">
 	<h1>Abakusrevyen 2019: KULT!</h1>
 	<p><b>Abakusrevyen</b> presenterer en heidundranes aften med forestillingen <b>KULT!</b></p>
 	<p>

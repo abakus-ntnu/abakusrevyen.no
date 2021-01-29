@@ -6,6 +6,7 @@
 	export let image_format;
 	export let overlay;
 	export let videos = [];
+	export let color = 'unset';
 
 	let timeout_error_task = 0;
 
@@ -81,7 +82,7 @@
 
 <Banner {images} {overlay} {image_format} />
 
-<main>
+<main style="color: {color}">
 	<!-- Main text content-->
 	<slot />
 
@@ -108,7 +109,7 @@
 				title={video.title_long}
 				width="560"
 				height="315"
-				src="https://www.youtube.com/embed/{video.id}"
+				src="https://www.youtube-nocookie.com/embed/{video.id}"
 				frameborder="0"
 				allowfullscreen
 				on:load={() => show_iframe_error(false)}
