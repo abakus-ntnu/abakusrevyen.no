@@ -15,7 +15,7 @@
 </style>
 
 <svelte:head>
-	<title>Opptak til Abakusrevyen 2021!</title>
+	<title>Abakusrevyen 2021: Marionett!</title>
 </svelte:head>
 
 <div>
