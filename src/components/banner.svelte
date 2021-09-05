@@ -2,15 +2,17 @@
 	export const rand_choise = (list) => {
 		return list[Math.floor(Math.random() * list.length)];
 	};
-	export let image_format = "images/2021/banner-søk-revy.png";
+	export let image_format = "images/2022/søk-revy.png";
 	export let images = ["blue", "green", "orange", "pink"];
 	export let overlay = "";
 </script>
 
 <style>
 	#banner {
-		width: 100%;
-		height: 37.01696513vw;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
 	}
 
 	h1.stamper {

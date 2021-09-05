@@ -10,7 +10,7 @@
 <main>
 	<h1>Våre Tideligere Revyer:</h1>
 	<ul>
-		{#each ['2020', '2019', '2018', '2017'] as year}
+		{#each ['2021', '2020', '2019', '2018', '2017'] as year}
 			<li><a href="/{year}">{year}</a></li>
 		{/each}
 	</ul>
