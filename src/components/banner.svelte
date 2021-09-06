@@ -43,7 +43,7 @@
 </style>
 
 <div class="container">
-	<a href={#banner_link}>
+	<a href={banner_link}>
 		<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" class:boxed />
 
 		{#if overlay}
