@@ -2,12 +2,17 @@
 	export const rand_choise = (list) => {
 		return list[Math.floor(Math.random() * list.length)];
 	};
-	export let image_format = "images/2021/banner-søk-revy.png";
-	export let images = ["blue", "green", "orange", "pink"];
-	export let overlay = "";
+	export let image_format = 'images/2022/søk-revy.png';
+	export let images = ['blue', 'green', 'orange', 'pink'];
+	export let overlay = '';
+	export let boxed = false;
 </script>
 
 <style>
+	.container {
+		text-align: center;
+	}
+
 	#banner {
 		width: 100%;
 		height: 37.01696513vw;
@@ -28,14 +33,22 @@
 		align-items: center;
 		overflow: hidden;
 	}
+
+	#banner.boxed {
+		width: 70%;
+		height: unset;
+		margin-top: 2em;
+	}
 </style>
 
-<a href="/">
-	<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" />
+<div class="container">
+	<a href="/">
+		<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" class:boxed />
 
-	{#if overlay}
-		<div class="stamper">
-			<h1 class="stamper">[{overlay}]</h1>
-		</div>
-	{/if}
-</a>
+		{#if overlay}
+			<div class="stamper">
+				<h1 class="stamper">[{overlay}]</h1>
+			</div>
+		{/if}
+	</a>
+</div>
