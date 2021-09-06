@@ -1,6 +1,5 @@
 <script>
 	import Banner from '../components/banner.svelte';
-	import Background from '../components/background.svelte';
 </script>
 
 <style>
@@ -14,7 +13,7 @@
 </svelte:head>
 
 <div class="content">
-	<Banner boxed banner_link="https://tinyurl.com/abakusrevyen2022"/>
+	<Banner boxed banner_link="https://tinyurl.com/abakusrevyen2022" />
 
 	<!-- Description -->
 	<h1>Abakusrevyen 2022 har opptak!</h1>
@@ -24,21 +23,16 @@
 		morsomme og hyggelige abakuler? Da må du søke Abakusrevyen! <br />
 		Det er mulig å søke på så mange grupper som du vil, så ikke vær beskjeden! ;)
 	</p>
-	<div>
-		<br />
-	</div>
+	<br />
 	<div class="block">
 		<a class="button blue big wide" href="https://tinyurl.com/abakusrevyen2022">Søk Her!</a>
 	</div>
-	<div>
-		<br />
-	</div>
+	<br />
 	<p>
 		For informasjon om grupper og stillinger, se
 		<a href="https://abakus.no/articles/362/">denne</a>
 		artikkelen på abakus.no.
 	</p>
-
 	<p>
 		Spørsmål om alt og ingenting kan rettes til
 		<a href="mailto:revy@abakus.no">revy@abakus.no</a>
@@ -47,7 +41,6 @@
 			<u>Søknadsfrist 17. september!</u>
 		</b>
 	</p>
-
 	<p>
 		For mer info om fjorårets revy, se
 		<a href="/2021">Abakusrevyen 2021</a>.
