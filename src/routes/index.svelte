@@ -33,11 +33,11 @@
 	<div>
 		<br />
 	</div>
-	<!--p>
+	<p>
 		For informasjon om grupper og stillinger, se
-		<a href="https://abakus.no/articles/290/">denne</a>
+		<a href="https://abakus.no/articles/362/">denne</a>
 		artikkelen på abakus.no.
-	</p-->
+	</p>
 
 	<p>
 		Spørsmål om alt og ingenting kan rettes til
