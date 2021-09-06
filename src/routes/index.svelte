@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="content">
-	<Banner boxed />
+	<Banner boxed banner_link="https://tinyurl.com/abakusrevyen2022"/>
 
 	<!-- Description -->
 	<h1>Abakusrevyen 2022 har opptak!</h1>
