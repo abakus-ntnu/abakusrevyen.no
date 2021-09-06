@@ -1,12 +1,13 @@
 <script>
-	import Banner from "../components/banner.svelte";
+	import Banner from '../components/banner.svelte';
 </script>
 
 <svelte:head>
 	<title>Arkiv</title>
 </svelte:head>
 
-<Banner />
+<Banner boxed />
+
 <main>
 	<h1>Våre Tideligere Revyer:</h1>
 	<ul>

@@ -1,7 +1,6 @@
 <script>
 	import Banner from '../components/banner.svelte';
 	import Background from '../components/background.svelte';
-
 </script>
 
 <style>
@@ -15,8 +14,7 @@
 </svelte:head>
 
 <div class="content">
-
-	<Banner />
+	<Banner boxed />
 
 	<!-- Description -->
 	<h1>Abakusrevyen 2022 har opptak!</h1>
@@ -54,6 +52,6 @@
 		For mer info om fjorårets revy, se
 		<a href="/2021">Abakusrevyen 2021</a>.
 	</p>
+	<br />
 	<p>Sjekk også ut våre tideligere revyer i arkivet vårt <a href="/arkiv">her</a>.</p>
-
 </div>
