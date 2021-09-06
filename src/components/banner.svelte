@@ -5,6 +5,7 @@
 	export let image_format = 'images/2022/søk-revy.png';
 	export let images = ['blue', 'green', 'orange', 'pink'];
 	export let overlay = '';
+	export let banner_link = '/';
 	export let boxed = false;
 </script>
 
@@ -42,7 +43,7 @@
 </style>
 
 <div class="container">
-	<a href="/">
+	<a href={banner_link}>
 		<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" class:boxed />
 
 		{#if overlay}
