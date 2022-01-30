@@ -25,4 +25,4 @@
 	</Revy>
 	<p>Sjekk også ut våre andre revyer i arkivet vårt <a href="/arkiv">her</a>.</p>
 </div>
-<Background color="#1c315f" />
+<Background color="#25335e" />
