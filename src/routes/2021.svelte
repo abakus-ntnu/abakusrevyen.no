@@ -3,7 +3,7 @@
 	import Background from '../components/background.svelte';
 
 	let videos = [
-		{ title: 'Opptak', title_long: 'Abakusrevyen Opptak 2021', id: 'TvA-oNItlwA' },
+		{ title: 'Akt 1 & 2', title_long: 'Opptak av Abakusrevyen 2021: Marionett', id: 'TvA-oNItlwA' },
 		{ title: 'Promo Video', title_long: '2021 Promo Video', id: 'vCuE7RTfTdQ' },
 		{ title: 'Søk Revy', title_long: 'Opptak 2021 Promo Video', id: 'yAu0zSS8YDY' }
 	];
@@ -21,8 +21,9 @@
 
 <div>
 	<Revy image_format="images/2021/logo.png" {videos}>
-		<h2><i>4. og 5. mars braket det løs live fra Byscenen!</i></h2>
+		<h1>Abakusrevyen 2021 presenterer Marionett!</h1>
+		<p>Velkommen til en forestilling uten like, for en pandemi stopper ikke Abakusrevyen 🥳</p>
+		<p>4. og 5. mars kunne du tune inn til digital livesending, så du kunne nyte underholdningen rett fra godstolen hjemme i stua. Så følg med, for dette vil du bare ikke gå glipp av! 💃</p>
 	</Revy>
-	<p>Sjekk også ut våre andre revyer i arkivet vårt <a href="/arkiv">her</a>.</p>
 </div>
 <Background color="#25335e" />

@@ -1,5 +1,12 @@
 <script>
 	import Banner from '../components/banner.svelte';
+	const years = {
+		2017: 'Push Pop Baluba',
+		2018: 'Solidarisk',
+		2019: 'KULT!',
+		2020: 'Satte Spor',
+		2021: 'Marionett',
+	}
 </script>
 
 <svelte:head>
@@ -11,8 +18,14 @@
 <main>
 	<h1>Våre Tideligere Revyer:</h1>
 	<ul>
-		{#each ['2021', '2020', '2019', '2018', '2017'] as year}
-			<li><a href="/{year}">{year}</a></li>
+		{#each Object.entries(years).sort().reverse() as [year, name]}
+			<li><a href="/{year}">{year}: {name}</a></li>
 		{/each}
 	</ul>
 </main>
+
+<style>
+	main {
+		text-align: left;
+	}
+</style>

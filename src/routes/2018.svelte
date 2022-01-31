@@ -6,6 +6,7 @@
 	let videos = [
 		{ title: "Akt 1", title_long: "Abakusrevyen 2018: Akt 1", id: "yfLDWofs0-8" },
 		{ title: "Akt 2", title_long: "Abakusrevyen 2018: Akt 2", id: "8b91ozp3i6Y" },
+		{ title: "Kjøp billett!", title_long: "Kjøp billett til Abakusrevyen 2018 Solidarisk", id: "T9mBjKyJg10"}
 	];
 </script>
 

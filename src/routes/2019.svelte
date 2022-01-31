@@ -4,7 +4,7 @@
 
 	let image_format = 'images/2019/banner.png';
 	let videos = [
-		{ title: 'Opptak', title_long: 'Abakusrevyen Opptak 2019', id: '3XtropmKsrg' },
+		{ title: 'Akt 1 & 2', title_long: 'Opptak av Abakusrevyen 2019: KUTL!', id: '3XtropmKsrg' },
 		{ title: 'Promo Video', title_long: 'Abakusrevyen Promo Video 2019', id: '8W5PUSJ3slU' }
 	];
 </script>

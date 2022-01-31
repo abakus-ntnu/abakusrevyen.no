@@ -19,9 +19,9 @@
 
 <div>
 	<Revy image_format="images/2022/logo.png" {videos}>
-		<h2><i>3. og 4. mars braket det løs live fra Byscenen!</i></h2>
+		<h2><i>3. og 4. mars braker det løs live fra Byscenen!</i></h2>
 		<h3>Nytt av i år blir det både fysisk publikum og digital stream slik at alle kan få med seg sesongens beste revy!</h3>
+		<h2><i>Billetter slippes snart så følg med!</i></h2>
 	</Revy>
-	<p>Sjekk også ut våre andre revyer i arkivet vårt <a href="/arkiv">her</a>.</p>
 </div>
 <Background color="#78031e" />

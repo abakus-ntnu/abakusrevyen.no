@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Banner from '../components/banner.svelte';
+	import {page_text_color} from '../utils/stores';
 
 	export let images;
 	export let image_format;
@@ -25,6 +26,10 @@
 
 	onMount(() => {
 		timeout_error_task = setTimeout(() => show_iframe_error(true), 5000); // TODO: Add loading icon or something...
+		$page_text_color = color;
+		return () => {
+			$page_text_color = 'unset';
+		} 
 	});
 </script>
 
@@ -82,7 +87,7 @@
 
 <Banner {images} {overlay} {image_format} />
 
-<main style="color: {color}">
+<main>
 	<!-- Main text content-->
 	<slot />
 

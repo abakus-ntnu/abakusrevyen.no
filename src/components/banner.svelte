@@ -2,7 +2,7 @@
 	export const rand_choise = (list) => {
 		return list[Math.floor(Math.random() * list.length)];
 	};
-	export let image_format = 'images/2022/søk-revy.png';
+	export let image_format = 'images/2022/logo.png';
 	export let images = ['blue', 'green', 'orange', 'pink'];
 	export let overlay = '';
 	export let banner_link = '/';
