@@ -22,10 +22,24 @@
 
 <div>
 	<h1>Abakusrevyen 2022 presenterer...</h1>
-	<Revy image_format="images/2022/logo.png" banner_link="https://youtu.be/L9dHCyfT5OA" {videos}>
-		<h2><i>3. og 4. mars braker det løs live fra Byscenen!</i></h2>
-		<h3>Nytt av i år blir det både fysisk publikum og digital stream slik at alle kan få med seg sesongens beste revy!</h3>
-		<h2><i>Billetter slippes snart så følg med!</i></h2>
+	<Revy image_format="images/2022/logo.png" banner_link="https://fb.me/e/31SXZ5zni" {videos}>
+		<div style='margin-bottom: 50px'>
+			<h2><i>3. og 4. mars braker det løs live fra Byscenen!</i></h2>
+			<h3>Nytt av i år blir det både fysisk publikum og digital stream slik at alle kan få med seg sesongens beste revy!</h3>
+		</div>
+
+		<div>
+			<h2><i>Billettsalg:</i></h2>
+			<h2>Torsdag 3. mars</h2>
+			<div class="block">
+				<a class="button blue big wide" href="https://byscn.no/abakus_22-1">19:00</a>
+			</div>
+			<h2>Fredag 4. mars</h2>
+			<div class="block">
+				<a class="button blue big wide" href="https://byscn.no/abakus_22-2">17:00</a>
+				<a class="button blue big wide" href="https://byscn.no/abakus_22-3">20:30</a>
+			</div>
+		</div>
 	</Revy>
 	<p>
 		Spørsmål om alt og ingenting kan rettes til
