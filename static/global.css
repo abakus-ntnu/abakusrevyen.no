@@ -9,10 +9,11 @@ body {
 	padding: 0;
 	background-color: #78031e;
 	color: white;
-	font-family: "AEH";
+	font-family: 'AEH';
 	font-weight: 600;
-	font-family: 'f', Cantarell, 'Apple', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-family: "AEH";
+	font-family: 'f', Cantarell, 'Apple', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+	font-family: 'AEH';
 	text-align: center;
 }
 
@@ -42,8 +43,8 @@ a {
 }
 
 a,
-a[href^="mailto"] {
-	color: #FF5964;
+a[href^='mailto'] {
+	color: #ff5964;
 }
 
 .small {
@@ -77,7 +78,7 @@ code {
 }
 
 .stamper {
-	font-family: "Stamper";
+	font-family: 'Stamper';
 	color: #c92f1a;
 }
 
@@ -126,18 +127,24 @@ code {
 }
 
 @font-face {
-	font-family: "AEH";
-	src: url("/font/AEH.ttf");
+	font-family: 'AEH';
+	src: url('/font/AEH.ttf');
 	font-weight: 900;
 }
 
 @font-face {
-	font-family: "AEH";
-	src: url("/font/AER.ttf");
+	font-family: 'AEH';
+	src: url('/font/AER.ttf');
 	font-weight: 600;
 }
 
 @font-face {
-	font-family: "Stamper";
-	src: url("old_stamper.ttf");
+	font-family: 'DBB';
+	src: url('/font/DBB.ttf');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Stamper';
+	src: url('old_stamper.ttf');
 }

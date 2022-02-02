@@ -8,6 +8,7 @@
 	export let overlay;
 	export let videos = [];
 	export let color = 'unset';
+	export let banner_link = '/';
 
 	let timeout_error_task = 0;
 
@@ -29,7 +30,7 @@
 		$page_text_color = color;
 		return () => {
 			$page_text_color = 'unset';
-		} 
+		}
 	});
 </script>
 
@@ -40,6 +41,10 @@
 		flex-direction: column;
 		align-content: center;
 		align-items: center;
+	}
+
+	h1 {
+		font-family: "DBB";
 	}
 
 	.iframe-holder {
@@ -85,7 +90,7 @@
 	}
 </style>
 
-<Banner {images} {overlay} {image_format} />
+<Banner {images} {overlay} {image_format} {banner_link}/>
 
 <main>
 	<!-- Main text content-->

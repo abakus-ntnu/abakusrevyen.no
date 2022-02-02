@@ -6,6 +6,7 @@
    addition to combat this. */
 
 	export let color = "transparent";
+	export let background_image = "";
 
 	onMount(() => {
 		document.body.style.backgroundColor = color;
@@ -29,4 +30,4 @@
 	}
 </style>
 
-<div style="color: {color}" />
+<div style="background: {color} url({background_image}) repeat-y top left" />
