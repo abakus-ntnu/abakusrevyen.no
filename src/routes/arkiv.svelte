@@ -24,10 +24,10 @@
 		{/each}
 	</ul>
 </main>
+<Background color="#78031e" background_image="/images/2022/background-color.png" />
 
 <style>
 	main {
 		text-align: left;
 	}
 </style>
-<Background color="#78031e" background_image="/images/2022/background-color.png"/>
