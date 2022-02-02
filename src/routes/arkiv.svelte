@@ -1,5 +1,6 @@
 <script>
 	import Banner from '../components/banner.svelte';
+	import Background from '../components/background.svelte';
 	const years = {
 		2017: 'Push Pop Baluba',
 		2018: 'Solidarisk',
@@ -29,3 +30,4 @@
 		text-align: left;
 	}
 </style>
+<Background color="#78031e" background_image="/images/2022/background-color.png"/>
