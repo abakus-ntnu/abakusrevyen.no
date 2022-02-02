@@ -21,30 +21,26 @@
 			<h2><i>Billettsalg:</i></h2>
 			<h2>Torsdag 3. mars</h2>
 			<div class="block">
-				<a class="button blue big wide" href="https://byscn.no/abakus_22-1">19:00</a>
+				<a class="button blue font-normal" href="https://byscn.no/abakus_22-1">19:00</a>
 			</div>
 			<h2>Fredag 4. mars</h2>
 			<div class="block">
-				<a class="button blue big wide" href="https://byscn.no/abakus_22-2">17:00</a>
-				<a class="button blue big wide" href="https://byscn.no/abakus_22-3">20:30</a>
+				<a class="button blue font-normal" href="https://byscn.no/abakus_22-2">17:00</a>
+				<a class="button blue font-normal" href="https://byscn.no/abakus_22-3">20:30</a>
 			</div>
 		</div>
 	</Revy>
-	<p>
-		Spørsmål om alt og ingenting kan rettes til
-		<a href="mailto:revy@abakus.no">revy@abakus.no</a>
-		<br />
-	</p>
 </div>
+<p>
+	Spørsmål om alt og ingenting kan rettes til
+	<a href="mailto:revy@abakus.no">revy@abakus.no</a>
+	<br />
+</p>
 <Background color="#78031e" background_image="/images/2022/background-color.png" />
 
 <style>
 	div {
 		text-align: center;
-	}
-	h1,
-	h2,
-	h3 {
 		font-family: 'DBB';
 	}
 </style>

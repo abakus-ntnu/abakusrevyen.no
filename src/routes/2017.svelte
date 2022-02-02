@@ -1,5 +1,6 @@
 <script>
 	import Revy from '../components/revy.svelte';
+	import Background from '../components/background.svelte';
 
 	let image_format = 'images/2017/banner.png';
 	let videos = [
@@ -28,3 +29,4 @@
 		blitt vist!
 	</p>
 </Revy>
+<Background color="#31282f" />

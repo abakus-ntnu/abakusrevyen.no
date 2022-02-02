@@ -7,13 +7,15 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
-	background-color: #78031e;
+	background: #78031e;
 	color: white;
-	font-family: 'AEH';
-	font-weight: 600;
-	font-family: 'f', Cantarell, 'Apple', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-family: 'AEH';
 	text-align: center;
+}
+
+.font-normal,
+body {
+	font-weight: 600;
+	font-family: 'AEH';
 }
 
 h1,
@@ -145,5 +147,5 @@ code {
 
 @font-face {
 	font-family: 'Stamper';
-	src: url('old_stamper.ttf');
+	src: url('/font/old_stamper.ttf');
 }

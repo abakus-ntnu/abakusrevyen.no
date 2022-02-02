@@ -75,10 +75,6 @@
 		align-items: center;
 	}
 
-	h1 {
-		font-family: 'DBB';
-	}
-
 	.iframe-holder {
 		width: calc(100vw - 2.356267672vw - var(--scrollbar));
 		height: calc(50vw - 1.178133836vw - var(--scrollbar));

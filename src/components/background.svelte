@@ -8,15 +8,24 @@
 	export let color = 'transparent';
 	export let background_image = '';
 
+	let background;
+
+	$: {
+		background = `${color} url(${background_image}) repeat-y top left`;
+		if (typeof window != 'undefined') {
+			document.body.style.background = background;
+		}
+	}
+
 	onMount(() => {
-		document.body.style.backgroundColor = color;
+		document.body.style.background = background;
 		return () => {
-			document.body.style.backgroundColor = '';
+			document.body.style.background = '';
 		};
 	});
 </script>
 
-<div style="background: {color} url({background_image}) repeat-y top left" />
+<div style="background: {background}" />
 
 <style>
 	/* Change background color, works with SSR, but some browsers like Safari for macOS allows you
