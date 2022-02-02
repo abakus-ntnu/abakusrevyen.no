@@ -8,7 +8,7 @@
 	let videos = [
 		{ title: 'Akt 1 & 2', title_long: 'Abakusrevyen 2020 Marionett', id: 'dB0fC4VJsGI' },
 		{ title: 'Promo Video', title_long: 'Abakusrevyen Promo Video 2020', id: 'EvRhDjTkBCA' },
-		{ title: 'Søk gjengsjef', title_long: 'Søk gjengsjef for Abakusrevyen 2020', id: 'vO7Xoj5RVHI'}
+		{ title: 'Søk gjengsjef', title_long: 'Søk gjengsjef for Abakusrevyen 2020', id: 'vO7Xoj5RVHI' }
 	];
 </script>
 

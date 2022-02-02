@@ -6,8 +6,8 @@
 		2018: 'Solidarisk',
 		2019: 'KULT!',
 		2020: 'Satte Spor',
-		2021: 'Marionett',
-	}
+		2021: 'Marionett'
+	};
 </script>
 
 <svelte:head>

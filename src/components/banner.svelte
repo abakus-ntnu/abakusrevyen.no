@@ -9,6 +9,18 @@
 	export let boxed = false;
 </script>
 
+<div class="container">
+	<a href={banner_link}>
+		<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" class:boxed />
+
+		{#if overlay}
+			<div class="stamper">
+				<h1 class="stamper">[{overlay}]</h1>
+			</div>
+		{/if}
+	</a>
+</div>
+
 <style>
 	.container {
 		text-align: center;
@@ -41,15 +53,3 @@
 		margin-top: 2em;
 	}
 </style>
-
-<div class="container">
-	<a href={banner_link}>
-		<img id="banner" src={image_format.replace('{img}', rand_choise(images))} alt="Banner" class:boxed />
-
-		{#if overlay}
-			<div class="stamper">
-				<h1 class="stamper">[{overlay}]</h1>
-			</div>
-		{/if}
-	</a>
-</div>

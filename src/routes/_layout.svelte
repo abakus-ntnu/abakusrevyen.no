@@ -1,19 +1,16 @@
 <script>
-	import { onMount } from "svelte";
-	import {page_text_color} from '../utils/stores';
+	import { onMount } from 'svelte';
+	import { page_text_color } from '../utils/stores';
 	onMount(() => {
 		const handleResize = () => {
-			document.documentElement.style.setProperty(
-				"--scrollbar",
-				window.innerWidth - document.body.clientWidth + "px"
-			);
+			document.documentElement.style.setProperty('--scrollbar', window.innerWidth - document.body.clientWidth + 'px');
 		};
-		window.addEventListener("resize", handleResize);
+		window.addEventListener('resize', handleResize);
 		handleResize();
 	});
 </script>
 
-<div style='color: {$page_text_color}'>
+<div style="color: {$page_text_color}">
 	<slot />
 
 	<p>Sjekk også ut våre andre revyer i arkivet vårt <a href="/arkiv">her</a>.</p>
@@ -22,7 +19,6 @@
 <footer>
 	<p>Laget med <span style="color: #e25555;">&#9829;</span> av Teknikk</p>
 </footer>
-
 
 <style>
 	footer {

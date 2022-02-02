@@ -1,45 +1,45 @@
 {
-  "name": "abakusrevyen",
-  "description": "The website for Abakusrevyen.no",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build",
-    "lint:prettier": "prettier --check --plugin-search-dir=. .",
-    "lint:eslint": "eslint --ignore-path ./.gitignore .",
-    "lint:depcheck": "depcheck --ignores '@babel/*,eslint-*,prettier-*,@sapper/*'",
-    "lint": "echo lint:prettier lint:eslint lint:depcheck | xargs -n 1 npm run --silent",
-    "format:prettier": "prettier --write --plugin-search-dir=. .",
-    "format:eslint": "eslint --fix --ignore-path ./.gitignore .",
-    "format": "echo format:prettier format:eslint | xargs -n 1 npm run --silent"
-  },
-  "dependencies": {
-    "compression": "^1.7.1",
-    "polka": "next",
-    "sirv": "^1.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "@rollup/plugin-babel": "^5.0.0",
-    "@rollup/plugin-commonjs": "^14.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
-    "@rollup/plugin-replace": "^2.2.0",
-    "depcheck": "^1.4.3",
-    "eslint": "^8.8.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.4.0",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.6.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-svelte": "^6.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "sapper": "^0.28.10",
-    "svelte": "^3.31.2"
-  }
+	"name": "abakusrevyen",
+	"description": "The website for Abakusrevyen.no",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "sapper dev",
+		"build": "sapper build --legacy",
+		"export": "sapper export --legacy",
+		"start": "node __sapper__/build",
+		"lint:prettier": "prettier --check --plugin-search-dir=. .",
+		"lint:eslint": "eslint --ignore-path ./.gitignore .",
+		"lint:depcheck": "depcheck --ignores '@babel/*,eslint-*,prettier-*,@sapper/*'",
+		"lint": "echo lint:prettier lint:eslint lint:depcheck | xargs -n 1 npm run --silent",
+		"format:prettier": "prettier --write --plugin-search-dir=. .",
+		"format:eslint": "eslint --fix --ignore-path ./.gitignore .",
+		"format": "echo format:prettier format:eslint | xargs -n 1 npm run --silent"
+	},
+	"dependencies": {
+		"compression": "^1.7.1",
+		"polka": "next",
+		"sirv": "^1.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"@babel/plugin-syntax-dynamic-import": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.0.0",
+		"@babel/preset-env": "^7.0.0",
+		"@babel/runtime": "^7.0.0",
+		"@rollup/plugin-babel": "^5.0.0",
+		"@rollup/plugin-commonjs": "^14.0.0",
+		"@rollup/plugin-node-resolve": "^8.0.0",
+		"@rollup/plugin-replace": "^2.2.0",
+		"depcheck": "^1.4.3",
+		"eslint": "^8.8.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.4.0",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.6.0",
+		"rollup": "^2.3.4",
+		"rollup-plugin-svelte": "^6.0.0",
+		"rollup-plugin-terser": "^7.0.0",
+		"sapper": "^0.28.10",
+		"svelte": "^3.31.2"
+	}
 }

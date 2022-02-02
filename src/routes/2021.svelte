@@ -9,12 +9,6 @@
 	];
 </script>
 
-<style>
-	div {
-		text-align: center;
-	}
-</style>
-
 <svelte:head>
 	<title>Abakusrevyen 2021: Marionett!</title>
 </svelte:head>
@@ -23,7 +17,16 @@
 	<Revy image_format="images/2021/logo.png" {videos}>
 		<h1>Abakusrevyen 2021 presenterer Marionett!</h1>
 		<p>Velkommen til en forestilling uten like, for en pandemi stopper ikke Abakusrevyen 🥳</p>
-		<p>4. og 5. mars kunne du tune inn til digital livesending, så du kunne nyte underholdningen rett fra godstolen hjemme i stua. Så følg med, for dette vil du bare ikke gå glipp av! 💃</p>
+		<p>
+			4. og 5. mars kunne du tune inn til digital livesending, så du kunne nyte underholdningen rett fra godstolen hjemme i stua. Så følg med, for dette vil du bare ikke gå glipp
+			av! 💃
+		</p>
 	</Revy>
 </div>
 <Background color="#25335e" />
+
+<style>
+	div {
+		text-align: center;
+	}
+</style>

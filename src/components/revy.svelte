@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Banner from '../components/banner.svelte';
-	import {page_text_color} from '../utils/stores';
+	import { page_text_color } from '../utils/stores';
 
 	export let images;
 	export let image_format;
@@ -30,9 +30,41 @@
 		$page_text_color = color;
 		return () => {
 			$page_text_color = 'unset';
-		}
+		};
 	});
 </script>
+
+<Banner {images} {overlay} {image_format} {banner_link} />
+
+<main>
+	<!-- Main text content-->
+	<slot />
+
+	{#each videos as video}
+		<h1>{video.title}:</h1>
+		<div class="iframe-holder no-error">
+			<!-- Error to display if the iframe fail to load, e.g. ad-blocker blocking youtube tracking -->
+			<div class="iframe-error">
+				<div>
+					<i>Det ser ut som videoen ikke ville laste inn. Kanskje du har en innholdsblokker som forstyrrer? Eventuelt se den direkte på youtube i stedet:</i>
+				</div>
+				<div class="block">
+					<a class="button youtube-red small" href="https://www.youtube.com/watch?v={video.id}">{video.title_long}</a>
+				</div>
+			</div>
+
+			<!-- Video -->
+			<iframe
+				title={video.title_long}
+				width="560"
+				height="315"
+				src="https://www.youtube-nocookie.com/embed/{video.id}"
+				frameborder="0"
+				allowfullscreen
+				on:load={() => show_iframe_error(false)} />
+		</div>
+	{/each}
+</main>
 
 <style>
 	main {
@@ -44,7 +76,7 @@
 	}
 
 	h1 {
-		font-family: "DBB";
+		font-family: 'DBB';
 	}
 
 	.iframe-holder {
@@ -89,41 +121,3 @@
 		}
 	}
 </style>
-
-<Banner {images} {overlay} {image_format} {banner_link}/>
-
-<main>
-	<!-- Main text content-->
-	<slot />
-
-	{#each videos as video}
-		<h1>{video.title}:</h1>
-		<div class="iframe-holder no-error">
-			<!-- Error to display if the iframe fail to load, e.g. ad-blocker blocking youtube tracking -->
-			<div class="iframe-error">
-				<div>
-					<i
-						>Det ser ut som videoen ikke ville laste inn. Kanskje du har en innholdsblokker som forstyrrer?
-						Eventuelt se den direkte på youtube i stedet:</i
-					>
-				</div>
-				<div class="block">
-					<a class="button youtube-red small" href="https://www.youtube.com/watch?v={video.id}"
-						>{video.title_long}</a
-					>
-				</div>
-			</div>
-
-			<!-- Video -->
-			<iframe
-				title={video.title_long}
-				width="560"
-				height="315"
-				src="https://www.youtube-nocookie.com/embed/{video.id}"
-				frameborder="0"
-				allowfullscreen
-				on:load={() => show_iframe_error(false)}
-			/>
-		</div>
-	{/each}
-</main>

@@ -1,20 +1,22 @@
 <script>
-	import { onMount } from "svelte";
+	import { onMount } from 'svelte';
 
 	/* Not a perfect solution, as SSR doesn't know about this color change, so it will flash the
    original bg color when you reload the page or enter the url manually. We add the div in
    addition to combat this. */
 
-	export let color = "transparent";
-	export let background_image = "";
+	export let color = 'transparent';
+	export let background_image = '';
 
 	onMount(() => {
 		document.body.style.backgroundColor = color;
 		return () => {
-			document.body.style.backgroundColor = "";
+			document.body.style.backgroundColor = '';
 		};
 	});
 </script>
+
+<div style="background: {color} url({background_image}) repeat-y top left" />
 
 <style>
 	/* Change background color, works with SSR, but some browsers like Safari for macOS allows you
@@ -29,5 +31,3 @@
 		z-index: -1;
 	}
 </style>
-
-<div style="background: {color} url({background_image}) repeat-y top left" />
