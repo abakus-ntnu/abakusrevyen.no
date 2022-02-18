@@ -105,8 +105,13 @@ code {
 }
 
 .blue {
-	border-color: #72a0ae;
-	background-color: #6b97ab;
+	border-color: #4562ff;
+	background-color: #3353ff;
+}
+
+.green {
+	border-color: #013723;
+	background-color: #013220;
 }
 
 @media (max-width: 1600px) {

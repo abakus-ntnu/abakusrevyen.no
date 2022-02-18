@@ -23,10 +23,21 @@
 			<div class="block">
 				<a class="button blue font-normal" href="https://byscn.no/abakus_22-1">19:00</a>
 			</div>
+			<div style="margin-top: 40px">
+				<div class="block">
+					<a class="button green font-normal" href="https://vier.live/act/abakusrevyen-2022-svin-paa-skogen-3-mars-1900">Digitalt: 19:00</a>
+				</div>
+			</div>
 			<h2>Fredag 4. mars</h2>
 			<div class="block">
 				<a class="button blue font-normal" href="https://byscn.no/abakus_22-2">17:00</a>
 				<a class="button blue font-normal" href="https://byscn.no/abakus_22-3">20:30</a>
+			</div>
+			<div style="margin-top: 40px">
+				<div class="block">
+					<a class="button green font-normal" href="https://vier.live/act/abakusrevyen-2022-svin-paa-skogen-4-mars-1700">Digitalt: 17:00</a>
+					<a class="button green font-normal" href="https://vier.live/act/abakusrevyen-2022-svin-paa-skogen-4-mars-2030">Digitalt: 20:30</a>
+				</div>
 			</div>
 		</div>
 	</Revy>
