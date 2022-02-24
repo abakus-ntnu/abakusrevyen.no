@@ -11,7 +11,7 @@
 	let background;
 
 	$: {
-		background = `${color} url(${background_image}) repeat-y top left`;
+		background = `${color} url(${background_image}) repeat top left`;
 		if (typeof window != 'undefined') {
 			document.body.style.background = background;
 		}
