@@ -114,6 +114,11 @@ code {
 	background-color: #013220;
 }
 
+.grey {
+	border-color: #797979;
+	background-color: #737373;
+}
+
 @media (max-width: 1600px) {
 	body {
 		font-size: 18px;

@@ -21,7 +21,7 @@
 			<h2><i>Billettsalg:</i></h2>
 			<h2>Torsdag 3. mars</h2>
 			<div class="block">
-				<a class="button blue font-normal" href="https://byscn.no/abakus_22-1">19:00</a>
+				<a class="button grey font-normal">(Utsolgt) 19:00</a>
 			</div>
 			<div style="margin-top: 40px">
 				<div class="block">
