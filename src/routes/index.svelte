@@ -17,7 +17,10 @@
 			<h3>Tusen takk for nå! Revyen blir lastet opp på YouTube om ikke lenge.</h3>
 		</div>
 		<div>
-			<h2>Du kan nyte vår flotte promovideo så lenge!<h2>
+			<h2>
+				Du kan nyte vår flotte promovideo så lenge!
+				<h2 />
+			</h2>
 		</div>
 	</Revy>
 </div>
