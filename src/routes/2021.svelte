@@ -23,7 +23,7 @@
 		</p>
 	</Revy>
 </div>
-<Background color="#25335e" />
+<Background color="#242D55" />
 
 <style>
 	div {
