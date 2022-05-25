@@ -29,4 +29,4 @@
 		blitt vist!
 	</p>
 </Revy>
-<Background color="#31282f" />
+<Background color="#272227" />
