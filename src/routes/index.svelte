@@ -29,7 +29,7 @@
 	<a href="mailto:revy@abakus.no">revy@abakus.no</a>
 	<br />
 </p>
-<Background color="#78031e" background-image="/images/2023/background-color_2.png" />
+<Background color="#343434" background_image="/images/2023/DEADBEEF" />
 
 <style>
 	div {

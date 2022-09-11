@@ -38,10 +38,7 @@
 		top: 0;
 		right: 0;
 		z-index: -1;
-		/* background: no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover; */
+		max-width: 100%;
+		max-height: 100%;
 	}
 </style>
