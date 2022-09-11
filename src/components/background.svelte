@@ -11,7 +11,7 @@
 	let background;
 
 	$: {
-		background = `${color} url(${background_image})`;
+		background = `${color} url(${background_image}) repeat top left`;
 		if (typeof window != 'undefined') {
 			document.body.style.background = background;
 		}
@@ -25,23 +25,23 @@
 	});
 </script>
 
-<div style="background: {background} no-repeat center center fixed" />
+<div style="background: {background}" />
 
 <style>
 	/* Change background color, works with SSR, but some browsers like Safari for macOS allows you
 	 to drag past the visible content with the touch bar, revealing the original background color,
 	 therefore we also use the onMount hack. */
 	div {
-		/* background: no-repeat center center fixed; */
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		/* position: fixed;
+		position: fixed;
 		width: 100vw;
 		height: 100vh;
 		top: 0;
 		right: 0;
-		z-index: -1; */
+		z-index: -1;
+		/* background: no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; */
 	}
 </style>
