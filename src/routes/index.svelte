@@ -19,7 +19,6 @@
 		<div>
 			<h2>
 				Du kan nyte vår flotte promovideo så lenge!
-				<h2 />
 			</h2>
 		</div>
 	</Revy>
