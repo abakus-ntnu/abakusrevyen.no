@@ -2,7 +2,10 @@
 	import Revy from '../components/revy.svelte';
 	import Background from '../components/background.svelte';
 
-	let videos = [{ title: 'Promovideo', title_long: '2022 Promovideo', id: 'L9dHCyfT5OA' }];
+	let videos = [
+		{ title: 'Revyforestilling', title_long: 'Opptak av Abakusrevyen 2022: Svin på Skogen', id: 'EiuAtR7zPI4' },
+		{ title: 'Promovideo', title_long: '2022 Promovideo', id: 'L9dHCyfT5OA' }
+	];
 </script>
 
 <svelte:head>
@@ -14,13 +17,7 @@
 	<Revy image_format="images/2022/logo.png" banner_link="https://fb.me/e/31SXZ5zni" {videos}>
 		<div style="margin-bottom: 50px">
 			<h2><i>3. og 4. mars braket det løs live fra Byscenen!</i></h2>
-			<h3>Tusen takk for nå! Revyen blir lastet opp på YouTube om ikke lenge.</h3>
-		</div>
-		<div>
-			<h2>
-				Du kan nyte vår flotte promovideo så lenge!
-				<h2 />
-			</h2>
+			<h3>Tusen takk for nå! Nedenfor finner du revyopptak og promovideo.</h3>
 		</div>
 	</Revy>
 </div>
